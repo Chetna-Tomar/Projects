@@ -1,0 +1,136 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;  
+}
+html,body{
+    height: 100%;
+    width:100%
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(346deg 17% 70%);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width:26%;
+   /* background-color: indianred; */
+}
+#part2{
+    height: 100%;
+    width: 67%;
+    background-color: khaki;
+    background-image: url("https://plus.unsplash.com/premium_photo-1682377521753-58d1fd9fa5ce?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwdmlsbGF8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+  /*  background-color: blue; */
+    /* background-color: hsl(345, 2%, 57%); */
+}
+#part3{
+    height: 100%;
+    width: 8% ;
+   /*  background-color: limegreen; */
+}
+#text-div{
+     height: 320px; 
+    position: absolute;
+    width: 400px;
+   /* background-color: rgb(194, 141, 141); */
+    left: 7%;
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+/* Blinking effect for text-div */
+#text-div h1 {
+    font-size: 2cm; /* Adjust size */
+    color: #fff; /* Text color */
+    text-align: left;
+    animation: blink 4s infinite alternate;
+   
+}
+
+/* Keyframes for blinking */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    60% { opacity: 1; }
+}
+
+/* Optional: Fade-in + Scale effect on page load */
+#text-div {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeInScale 2s ease forwards;
+}
+
+/* Keyframes for smooth scale + fade-in */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+#text-div>h1 {
+    font-size: 98px;
+    font-family: monument;
+    font-weight: 900;
+    letter-spacing: 7px;
+    line-height: 79px;
+    color: white;
+    text-transform: uppercase;
+   /* animation-name: inherit; */
+   /* animation: forwards 1s ease-in-out;
+    animation-duration: 5s;
+    animation-direction: forwards; */
+}
+
+#small-img {
+    height : 400px;
+    width : 300px;
+    background-color: red ;
+    background-image: url("https://plus.unsplash.com/premium_photo-1682800179192-ad46d99d86df?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwbGlmZXN0eWxlfGVufDB8fDB8fHww");
+    background-position: center;
+    background-size: cover;
+    border-radius: 9%;
+    position : absolute;
+    top: 50%;
+    right : 5%;
+    transform: translate( 0, -50% );
+}
+#vertical {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -45%;
+    top: -6%;
+    transform-origin: 0% 0%;
+    /* width: 100%; */
+     /* background-color: indianred; */
+}
+#vertical h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: 6px; 
+    font-family: monument; 
+    -webkit-text-stroke-width: 2px ;
+    -webkit-text-stroke-color: white;
+
+}
